@@ -1,1 +1,1 @@
-"web: vendor/bin/laravel public" 
+"web: vendor/bin/laravel /public/" 
