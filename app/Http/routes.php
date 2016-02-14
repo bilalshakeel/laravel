@@ -15,6 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Route::get('test', ['as' => 'test', 'uses' => 'IndexController@test']);
+Route::get('test', function($name = null)
+{
+    $results = DB::select('select * from users where id = :id', ['id' => 1]);
+    echo '<pre>'; print_r($results);
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
